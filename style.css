@@ -1,0 +1,1025 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+/* For navbar */
+.container{
+    position: relative;
+}
+.navbar{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30vw;
+    height: 15vh;
+}
+.navbarhold{
+    position: fixed;
+    top: 0;
+    z-index: 905;
+    width: 100%;
+}
+.logo{
+   height: 70px; 
+   width: 70px;
+   background-image: url(./imagegym/logoo.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 50%;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    color: white;
+    font-weight: bold;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    transition: all 0.3s linear;
+}
+.iconshold{
+    display: none;
+}
+.iconm{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+.iconm[name="close-outline"]{
+    display: none;
+}
+.menu a:hover{
+    color: white;
+}
+.li:hover{
+    background-color: red;
+    border: white solid 1px;
+    border-radius: 4px;
+}
+
+/* For slider */
+
+.slider0{
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.5s linear;
+    margin-top: 15vh;
+}
+.slideimg{
+    background-image: url(./imagegym/try.jpg);
+}
+.quote{
+    color: red;
+    font-weight: bolder;
+}
+.text{
+    color: white;
+}
+.content{
+    width: 30vw;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vw;
+    gap: 5vh;
+}
+.started{
+    height: 7vh;
+    width: 10vw;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+.started:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: white 1px solid;
+}
+.box1{
+    height: 15px;
+    width: 15px;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid white;
+    position: absolute;
+    bottom: 5%;
+    left: 43%;
+    cursor: pointer;
+}
+.box2{
+    left: 46%;
+}
+.box3{
+    left: 49%;
+}
+.sliderimg0{
+    background-image: url(./imagegym/slider0.jpg);
+}
+.sliderimg1{
+    background-image: url(./imagegym/slider1.jpg);
+}
+.sliderimg2{
+    background-image: url(./imagegym/slider2.jpg);
+}
+.colorslidebox{
+    background-color: red;
+}
+
+/* For About section */
+.aboutsec{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    justify-content: center;
+    align-items: center;
+}
+.imgabout{
+    height: 80vh;
+    width: 35%;
+    background-image: url(./imagegym/about2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+    border-right: 20px solid red;
+}
+.textcontain{
+    height: inherit;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.desc{
+    color: rgba(255, 255, 255, 0.671);
+    font-weight: lighter;
+}
+.right{
+    color: red;
+    font-size: 20px;
+}
+.mindtick{
+    font-size: 15px;
+    font-weight: lighter;
+}
+.ticktext{
+    font-size: 13px;
+    padding-top: 2vh;
+}
+.tickitem{
+    width: 45%;
+}
+.tickandhead{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    margin-top: 5vh;
+}
+.tickitemhold{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.readmore{
+    margin-top: 8vh;
+}
+
+/* For feature section */
+.forline{
+    margin-top: 10vh;
+    width: 90%;
+    height: 1vh;
+    border-top: solid 2px rgb(141, 141, 141);
+    margin-left: 6vw;
+}
+.featurepart{
+    background-color: black;
+    z-index: 10;
+    position: absolute;
+    left: 47%;
+    margin-top: -3.5vh;
+}
+.feat{
+    padding: 12px;
+    border: 1px solid rgb(141, 141, 141);
+    width: max-content;
+    border-radius: 4px;
+}
+
+.imgpart{
+    width: 20vw;
+    height: 40vh;
+    background-image: url(./imagegym/feature1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    transition: .3s all linear;
+}
+.imgpart:hover{
+    transform: scale(1.1);
+}
+.imgpart2{
+    background-image: url(./imagegym/feature2.jpg);
+    background-position: center;
+}
+.imgpart3{
+    background-image: url(./imagegym/feature3.jpg);
+}
+.iconpng{
+    height: 10vh;
+    width: 6vw;
+    filter: invert(1);
+}
+.featuresection{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7vw;
+}
+.textpart{
+    background-color: rgb(27, 27, 27);
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.feattext{
+    text-align: center;
+}
+.feathead{
+    margin-top: 2vh;
+}
+.featureholder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7vw;
+}
+.featstart{
+    margin-top: 5vh;
+    height: 5vh;
+    width: 8vw;
+    font-size: 10px;
+}
+
+/* For Pricing section */
+.pricingsection{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3vw;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+.affordable{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 15vh;
+}
+.pricetext{
+    font-size: 20px;
+}
+.pricedesc{
+    font-size: 15px;
+}
+.pricetick{
+    color: white;
+    font-size: 13px;
+}
+.pright{
+    font-size: 13px;
+}
+.pricingbutton{
+    width: 8vw;
+    height: 5vh;
+    font-size: 13px;
+}
+.affordable2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7vh;
+    border-radius: 4px;
+}
+.deatprice{
+    display: flex;
+}
+.dollar{
+    color: white;
+    font-size: 15px;
+    padding-top: 2vh;
+}
+.price{
+    font-size: 25px;
+    color: red;
+}
+.month{
+    padding-top: 1vh;
+}
+.forbg{
+    background-color: rgb(39, 39, 39);
+}
+
+/* For Trainers section */
+.holdert{
+    width: 90%;
+    display: flex;
+    margin-left: 6.1vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.t1{
+    height: 50vh;
+    width: 20vw;
+    background-image: url(./imagegym/trainer1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: 1s all ease-in-out;
+    margin-top: 13vh;
+}
+.t2{
+    background-image: url(./imagegym/trainer3.jpg);
+}
+.t3{
+    background-image: url(./imagegym/trainer2.jpg);
+}
+.t4{
+    background-image: url(./imagegym/trainer4.jpg);
+}
+.tcontent{
+    background-color: rgb(39, 39, 39);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+}
+.ttitle{
+    color: red;
+    font-size: 15px;
+}
+.name{
+    padding-top: 5px;
+    color: white;
+    font-size: 17px;
+}
+.contact{
+    margin-top: 3vh;
+    border-top: 2px solid rgb(141, 141, 141);
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.t1:hover .contact{
+    display: block;
+}
+.ticon{
+    padding: 12px;
+    font-size: 20px;
+    color: rgb(241, 237, 237);
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+.ticon:hover{
+    color: red;
+}
+
+/* For Discount Section */
+.dimg{
+    margin-top: 15vh;
+    height: 50vh;
+    width: 100%;
+    background-image: url(./imagegym/banner.jpg);
+    background-position: bottom;
+    position: relative;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textd{
+    text-transform: uppercase;
+}
+.descd{
+    text-align: center;
+}
+.containdis{
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+.rholder{
+    width: 90%;
+    display: flex;
+    margin-left: 6vw;
+    gap: 5vw;
+    margin-top: 15vh;
+    gap: 15vw;
+}
+.headrev{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+.sliderrev{
+    padding: 12px;
+    width: 30vw;
+    height: 30vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x:auto;
+    gap: 2vw;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.5s linear;
+}
+.sliderrev:hover{
+    transform: scale(1.1);
+}
+.rev1{
+    width: 90%;
+    background-color:rgb(39, 39, 39);
+    padding: 12px;
+    border-radius: 10px;
+}
+.aftertextrev{
+    display: flex;
+}
+.nameandprorev{
+    margin-top: 4vh;
+    margin-left: 1vw;
+}
+.dprev{
+    width: 50px;
+    height: 50px;
+    background-image: url(./imagegym/pic1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-top: 3vh;
+}
+.dp2{
+    background-image: url(./imagegym/pic2.png);
+}
+.dp3{
+    background-image: url(./imagegym/pic3.png);
+}
+.dp4{
+    background-image: url(./imagegym/pic4.png);
+}
+
+/* For Contact Detail */
+.secondfooter{
+    margin-top: 20vh;
+    display: flex;
+    width: 90%;
+    margin-left: 6vw;
+    justify-content: space-between;
+    border-top: 2px solid gray;
+    padding-top: 5vh;
+    flex-wrap: wrap;
+}
+.quicklinks{
+    width:15vw;
+}
+.linksli{
+    list-style: none;
+    padding-top: 10px;
+    display: inline-block;
+}
+.flinks{
+    display: flex;
+    flex-direction: column;
+}
+.flinks a{
+    text-decoration: none;
+    color: rgb(141, 141, 141);
+}
+.day{
+    color: rgb(141, 141, 141);
+    padding-top: 10px;
+}
+.tym{
+    color: red;
+    padding-top: 10px;
+}
+.daycont{
+    display: flex;
+    gap: .5vw;
+}
+.openinghr{
+    width: 20vw;
+}
+.conicon{
+    font-size: 20px;
+    color: red;
+}
+.num{
+    color: rgb(141, 141, 141);
+}
+.subscribe{
+    color: rgb(141, 141, 141);
+}
+#email{
+    background-color: rgb(39, 39, 39);
+    height: 4vh;
+    border: none;
+    padding: 5px;
+    outline: none;
+    color: white;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    gap: 20px;
+}
+.contactdetail{
+    width: 20vw;
+}
+.contcont{
+    display: flex;
+    gap: 1vw;
+    padding-top: 10px;
+}
+
+/* footer section */
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 39, 39);
+    margin-top: 10vh;
+}
+.create{
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+
+/* For Responsiveness */
+@media screen and (max-width:1010px) {
+    .featurepart{
+        left: 45%;
+    }
+    .ttitle{
+        font-size: 10px;
+    }
+    .name{
+        font-size: 13px;
+    }
+    .ticon{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+}
+@media screen and (max-width:850px) {
+    .content{
+        width: 70vw;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .started{
+        width: 30%;
+    }
+    .imgabout{
+        height: 100vh;
+    }
+    .textabout{
+        font-size: 20px;
+    }
+    .descabout{
+        font-size: 13px;
+    }
+    .right{
+        color: red;
+        font-size: 10px;
+    }
+    .mindtick{
+        font-size: 12px;
+    }
+    .readmore{
+        font-size: 10px;
+    }
+    .feathead{
+        font-size: 10px;
+    }
+    .iconpng{
+        width: 5vw;
+        height: 7vh;
+    }
+    .feattext{
+        font-size: 10px;
+    }
+    .featstart{
+        width: 80%;
+    }
+    .pricingbutton{
+        width: 50%;
+    }
+    .textn{
+        font-size: 15px;
+    }
+    .linksli a{
+        font-size: 12px;
+    }
+    .day{
+        font-size: 12px;
+    }
+    .tym{
+        font-size: 12px;
+    }
+    .conicon{
+        font-size: 12px;
+    }
+    .num{
+        font-size: 12px;
+    }
+    .subscribe{
+        font-size: 12px;
+    }
+    .sub{
+        width: 50%;
+    }
+}
+@media screen and (max-width:820px) {
+    .iconshold{
+        display: block;
+        z-index: 999;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+    .li a{
+        color: white;
+    }
+    .items{
+        width: 25%;
+        height: 60vh;
+        background-color:rgba(0, 0, 0, 0.61);
+        position: absolute;
+        right: 7vh;
+        top: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        border-radius: 4px;
+        z-index: 990;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .li{
+        text-align: center;
+    }
+    .activeitem .items{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .activeitem .iconshold .iconm[name="close-outline"]{
+        display: block;
+    }
+    .activeitem .iconshold .iconm[name="menu-outline"]{
+        display: none;
+    }
+    .aboutsec{
+        margin-top: -30vh;
+    }
+    .featurepart{
+        left: 42%;
+    }
+    .ttitle{
+        font-size: 8px;
+    }
+    .name{
+        font-size: 10px;
+    }
+    .ticon{
+        font-size: 10px;
+        padding-bottom: 0px;
+    }
+    .quoted{
+        font-size: 15px;
+    }
+    .textd{
+        font-size: 20px;
+    }
+    .descd{
+        font-size: 15px;
+    }
+    .descr{
+        font-size: 13px;
+    }
+    .rholder{
+        gap: 5vw;
+    }
+    .sliderrev{
+        width: 60%;
+    }
+    .textf{
+        font-size: 15px;
+        font-weight: lighter;
+    }
+}
+@media screen and (max-width:620px) {
+    .aboutsec{
+        flex-direction: column;
+    }
+    .imgabout{
+        width: 100%;
+    }
+    .textcontain{
+        width: 80%;
+    }
+    .featureholder{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .featuresection{
+        width: 100%;
+    }
+    .imgpart{
+        width: 40%;
+    }
+    .textpart{
+        width: 40%;
+    }
+    .feature1{
+        display: flex;
+        margin-left: 5vw;
+    }
+    .pricingbutton{
+        font-size: 10px;
+    }
+    .pricetext{
+        font-size: 15px;
+    }
+    .pricedesc{
+        font-size: 10px;
+    }
+    .pricetick{
+        font-size: 10px;
+    }
+    .t1{
+        width: 45%;
+    }
+    .ticon{
+        font-size: 15px;
+    }
+    .quoted{
+        font-size: 10px;
+    }
+    .textd{
+        font-size: 15px;
+    }
+    .descd{
+        font-size: 10px;
+    }
+    .started{
+        font-size: 12px;
+    }
+    .quicklinks{
+        width: 40%;
+    }
+    .openinghr{
+        width: 40%;
+    }
+    .contactdetail{
+        margin-top: 10vh;
+        width: 40%;
+    }
+    .newsletter{
+        margin-top: 10vh;
+        width: 40%;
+    }
+}
+@media screen and (max-width:480px) {
+    .items{
+        width: 100%;
+        right: 0;
+    }
+    .content{
+        width: 50vw;
+    }
+    .started{
+        width: 50%;
+    }
+    .box1{
+        height: 10px;
+        width: 10px;
+    }
+    .box2{
+        left: 55%;
+    }
+    .featurepart{
+        left: 37%;
+    }
+    .pricingbutton{
+        width: 90%;
+    }
+    .pricetext{
+        font-size: 13px;
+    }
+    .pricequote{
+        font-size: 13px;
+    }
+    .rholder{
+        flex-direction: column;
+        align-items: center;
+    }
+    .headrev{
+        width: 100%;
+    }
+    .sliderrev{
+        width: 80%;
+    }
+    .textf{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:380px) {
+    .feature1{
+        flex-direction: column;
+    }
+    .textpart{
+        width: 100%;
+        margin-left: -9vw;
+    }
+    .imgpart{
+        width: 100%;
+        margin-left: -9vw;
+    }
+    .featurepart{
+        left: 33%;
+    }
+    .iconpng{
+        width: 10vw;
+        height: 10vh;
+    }
+    .feathead{
+        font-size: 13px;
+    }
+    .feattext{
+        font-size: 12px;
+    }
+    .pricingsection{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .affordable{
+        width: 80%;
+    }
+    .ticon{
+        font-size: 10px;
+    }
+    .textd{
+        text-align: center;
+    }
+    .quoter{
+        text-align: center;
+        font-size: 10px;
+    }
+    .textr{
+        font-size: 15px;
+        text-align: center;
+    }
+    .descr{
+        font-size: 10px;
+        text-align: center;
+    }
+    .startr{
+        margin-left: 23vw;
+    }
+    .descsr{
+        font-size: 10px;
+    }
+    .dprev{
+        height: 40px;
+        width: 40px;
+    }
+    .textsr{
+        font-size: 13px;
+    }
+    .quotesr{
+        font-size: 10px;
+    }
+    .quicklinks{
+        width: 80%;
+    }
+    .openinghr{
+        margin-top: 10vh;
+        width: 80%;
+    }
+    .contactdetail{
+        /* margin-top: 10vh; */
+        width: 80%;
+    }
+    .newsletter{
+        /* margin-top: 10vh; */
+        width: 80%;
+    }
+}
+@media screen and (max-width:345px) {
+    .started{
+        width: 50%;
+        font-size: 10px;
+    }
+    .readmore{
+        margin-left: 20vw;
+    }
+    .featurepart{
+        left: 23%;
+    }
+    .forbg{
+        padding-bottom: 5vh;
+    }
+    .t1{
+        width: 80%;
+    }
+    .holdert{
+        justify-content: center;
+    }
+    .ticon{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:250px) {
+    .ticon{
+        font-size: 10px;
+    }
+    .textd{
+        font-size: 13px;
+    }
+    .sliderrev{
+        width: 100%;
+    }
+}
